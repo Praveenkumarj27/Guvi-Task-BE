@@ -8,6 +8,9 @@
   },
   "name": "guvi-task-be",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
