@@ -27,11 +27,11 @@ mongoose.set('strictQuery', true)
   
 )
 
-// app.use("/",userRoute);
+
 
 app.use("/", authRoutes);
 
 
   app.listen(process.env.PORT || 8080 , ()=>{
-    console.log(`Backend server runing`);
+    console.log(`Backend server running`);
   })

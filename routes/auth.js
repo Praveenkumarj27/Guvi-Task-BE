@@ -2,13 +2,18 @@ const {
     login,
     register,
     logOut,
-  } = require("../controllers/userController");
+    editUser,
+    all,
+    id,
+  } = require("../controllers/user");
   
   const router = require("express").Router();
   
   router.post("/login", login);
   router.post("/register", register);
-  router.get("/logout/:id", logOut);
+  router.get('/all',all);
+  router.get('/:id',id)
+  router.put('/edit-user/:id',editUser);
 
   module.exports = router;
 
